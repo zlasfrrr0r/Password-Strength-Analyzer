@@ -12,4 +12,6 @@ It scores passwords based on basic rules, classifies them as **Weak**, **Medium*
 
 ## 📂 Data
 
-Includes a file: `data/common_passwords.csv` — a list of 10,000 common passwords, with their features too (Kaggle source).
+Includes a file: `data/common_passwords.csv` — a list of 10,000 common passwords, with their features too.
+Kaggle source all credit goes to: https://www.kaggle.com/datasets/shivamb/10000-most-common-passwords
+
