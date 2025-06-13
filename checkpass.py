@@ -37,8 +37,7 @@ def check_pass(password):
   return verdict_score(password_score)
 
 # Load data from file containing most common passwords
-filepath = os.path.join('data', 'common_passwords.csv')
-passwords = np.genfromtxt(filepath, delimiter=',', dtype=str, skip_header=1)
+passwords = np.genfromtxt('common_passwords/csv', delimiter=',', dtype=str, skip_header=1)
 passwords_subset = passwords[:1000,:1]
 v_check_pass = np.vectorize(check_pass) # Vectorized Wrapper acts like func but takes array as input and apply pyfunc to each element
 result = v_check_pass(passwords_subset)
